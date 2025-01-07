@@ -2,3 +2,6 @@ runs/
 detection_results/
 env/
 yolov8m.pt
+tennis-ball-detection-6/
+.env
+best.pt
