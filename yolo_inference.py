@@ -10,10 +10,11 @@ os.makedirs(custom_path, exist_ok=True)
 model = YOLO('yolov8m')
 
 # Predict with custom save location
-result = model.predict(
+result = model.track(
     source='input_videos/input_video.mp4',
     save=True,
-    project=custom_path,    
+    project=custom_path,   
+    conf= 0.2, 
     save_dir=os.path.join(custom_path)
 )
 
